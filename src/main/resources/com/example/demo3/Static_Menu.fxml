@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="835.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Static_Menu_Controller">
+   <children>
+      <HBox layoutX="1.0" layoutY="2.0" prefHeight="835.0" prefWidth="1030.0">
+         <children>
+            <StackPane id="Menu" fx:id="Menu" prefHeight="787.0" prefWidth="167.0" style="-fx-background-color: #424242;">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <StackPane prefHeight="135.0" prefWidth="166.0" style="-fx-background-color: #feeeee;" />
+                        <Button fx:id="My_day" mnemonicParsing="false" onAction="#MyDay" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #424242;" text="My_Day" textFill="#f5f2f2" />
+                        <Button fx:id="Important" layoutX="10.0" layoutY="145.0" mnemonicParsing="false" onAction="#Impt" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #424242;" text="Important" textFill="#f5f2f2" />
+                        <Button fx:id="Tasks" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" onAction="#tasks" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #424242;" text="Tasks" textFill="#f5f2f2" />
+                        <Button fx:id="Planned" layoutX="10.0" layoutY="239.0" mnemonicParsing="false" onAction="#plnd" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #424242;" text="Planned" textFill="#f5f2f2" />
+                     </children>
+                  </VBox>
+               </children></StackPane>
+            <BorderPane fx:id="borderpane" prefHeight="835.0" prefWidth="863.0">
+               <center>
+                  <FlowPane fx:id="flowpane" prefHeight="835.0" prefWidth="925.0">
+                     <children>
+                        <HBox prefHeight="835.0" prefWidth="862.0">
+                           <children>
+                              <Pane fx:id="My_Day_View" prefHeight="835.0" prefWidth="625.0" styleClass="bgcolor" stylesheets="@../../../style.css">
+                                 <children>
+                                    <TextField layoutX="37.0" layoutY="670.0" prefHeight="47.0" prefWidth="549.0" promptText="+  Add a Task" style="-fx-background-color: #351821; -fx-background-border: 5px;">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <ComboBox layoutX="373.0" layoutY="681.0" prefHeight="27.0" prefWidth="87.0" promptText="Tasks" style="-fx-background-color: #261821;" />
+                                 </children>
+                              </Pane>
+                              <StackPane id="View_Side_list" fx:id="Suggestion" prefHeight="788.0" prefWidth="236.0" style="-fx-background-color: #424242;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </FlowPane>
+               </center>
+            </BorderPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

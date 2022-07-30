@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="724.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Important">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="724.0" prefWidth="713.0" style="-fx-background-color: #242424;">
+         <children>
+            <Label alignment="CENTER" layoutX="298.0" layoutY="305.0" prefHeight="57.0" prefWidth="147.0" style="-fx-background-color: #424242; -fx-background-radius: 5px;" text="Important AF" textFill="#f8f6f6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

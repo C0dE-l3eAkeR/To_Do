@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" prefHeight="835.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.My_Day_Controller">
+   <center>
+      <FlowPane fx:id="flowpane" prefHeight="835.0" prefWidth="925.0">
+         <children>
+            <HBox prefHeight="835.0" prefWidth="862.0">
+               <children>
+                  <Pane fx:id="My_Day_View" prefHeight="835.0" prefWidth="625.0" styleClass="bgcolor" stylesheets="@../../../style.css">
+                     <children>
+                        <TextField layoutX="37.0" layoutY="670.0" prefHeight="47.0" prefWidth="549.0" promptText="+  Add a Task" style="-fx-background-color: #351821; -fx-background-border: 5px;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox layoutX="373.0" layoutY="681.0" prefHeight="27.0" prefWidth="87.0" promptText="Tasks" style="-fx-background-color: #261821;" />
+                     </children>
+                  </Pane>
+                  <StackPane id="View_Side_list" fx:id="Suggestion" prefHeight="788.0" prefWidth="236.0" style="-fx-background-color: #424242;" />
+               </children>
+            </HBox>
+         </children>
+      </FlowPane>
+   </center>
+</BorderPane>
