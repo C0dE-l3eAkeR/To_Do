@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="826.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="742.0" prefWidth="826.0">
+         <children>
+            <ListView fx:id="taskList" layoutX="100.0" layoutY="49.0" prefHeight="573.0" prefWidth="631.0" style="-fx-background-color: #414141;" />
+            <TextArea fx:id="addTask" layoutX="100.0" layoutY="622.0" prefHeight="55.0" prefWidth="631.0" style="-fx-background-color: #424242;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

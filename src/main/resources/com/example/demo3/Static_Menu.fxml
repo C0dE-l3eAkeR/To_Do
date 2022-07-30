@@ -12,7 +12,7 @@
                <children>
                   <VBox prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <StackPane prefHeight="135.0" prefWidth="166.0" style="-fx-background-color: #feeeee;" />
+                        <StackPane prefHeight="135.0" prefWidth="166.0" style="-fx-background-color: #424141;" />
                         <Button fx:id="My_day" mnemonicParsing="false" onAction="#MyDay" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #424242;" text="My_Day" textFill="#f5f2f2" />
                         <Button fx:id="Important" layoutX="10.0" layoutY="145.0" mnemonicParsing="false" onAction="#Impt" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #424242;" text="Important" textFill="#f5f2f2" />
                         <Button fx:id="Tasks" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" onAction="#tasks" prefHeight="47.0" prefWidth="168.0" style="-fx-background-color: #424242;" text="Tasks" textFill="#f5f2f2" />
@@ -24,7 +24,7 @@
                <center>
                   <FlowPane fx:id="flowpane" prefHeight="835.0" prefWidth="925.0">
                      <children>
-                        <HBox prefHeight="835.0" prefWidth="862.0">
+                        <HBox fx:id="Suggestions" prefHeight="835.0" prefWidth="862.0" style="-fx-background-color: #424242;">
                            <children>
                               <Pane fx:id="My_Day_View" prefHeight="835.0" prefWidth="625.0" styleClass="bgcolor" stylesheets="@../../../style.css">
                                  <children>
@@ -33,10 +33,15 @@
                                           <Font size="14.0" />
                                        </font>
                                     </TextField>
-                                    <ComboBox layoutX="373.0" layoutY="681.0" prefHeight="27.0" prefWidth="87.0" promptText="Tasks" style="-fx-background-color: #261821;" />
+                                    <ComboBox layoutX="373.0" layoutY="681.0" prefHeight="27.0" prefWidth="87.0" promptText="Tasks" style="-fx-background-color: #413141;" />
+                                    <DatePicker layoutX="474.0" layoutY="682.0" prefHeight="25.0" prefWidth="50.0" style="-fx-color: #413141;" />
                                  </children>
                               </Pane>
-                              <StackPane id="View_Side_list" fx:id="Suggestion" prefHeight="788.0" prefWidth="236.0" style="-fx-background-color: #424242;" />
+                              <Pane fx:id="Suggestions" prefHeight="772.0" prefWidth="0.0">
+                                 <children>
+                                    <ListView layoutY="151.0" prefHeight="674.0" prefWidth="238.0" style="-fx-background-color: #42424232;" />
+                                 </children>
+                              </Pane>
                            </children>
                         </HBox>
                      </children>

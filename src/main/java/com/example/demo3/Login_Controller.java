@@ -29,7 +29,7 @@ public class Login_Controller {
     @FXML
     private TextField username;
 
-    private User admin = new User("admin","admin");
+    private User admin = new User("","");
 
     static Stage stage = new Stage();
     @FXML

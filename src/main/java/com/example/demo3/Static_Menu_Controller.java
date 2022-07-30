@@ -58,6 +58,7 @@ public class Static_Menu_Controller {
         Parent root = null;
         try {
             root= FXMLLoader.load(getClass().getResource("My_Day.fxml"));
+            root.getScene().getWindow();
         } catch (Exception e) {
         }
         borderpane.setCenter(root);
@@ -70,7 +71,13 @@ public class Static_Menu_Controller {
 
     @FXML
     void tasks(ActionEvent event) {
+       Parent root = null;
+        try {
+            root= FXMLLoader.load(getClass().getResource("tasks.fxml"));
 
+        } catch (Exception e) {
+        }
+        borderpane.setCenter(root);
     }
 
 }
